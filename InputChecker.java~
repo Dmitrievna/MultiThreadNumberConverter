@@ -1,0 +1,23 @@
+import java.util.*;
+
+
+     
+    
+    class InputChecker implements Runnable 
+    {
+        public void run() 
+        {
+            try {
+            Thread.sleep(10000);
+            } catch(InterruptedException e){}
+            Collections.sort(WebTestApp.inputNumbers);
+        
+            System.out.print("I'm helping" + WebTestApp.inputNumbers.get(0));
+            try 
+            {
+            Thread.sleep(5000);
+            } catch(InterruptedException e){}
+        }
+    
+    }
+ 
